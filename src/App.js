@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+/*import Hero from componented hero.jsx so it will be visible on the app */
+import Hero from './components/Hero.jsx';
+import Navbar from './components/Navbar.jsx';
+import Offers from './components/Offers.jsx'
+import Plan from './components/Plan.jsx'
+import ImageSlider from './components/ImageSlider.jsx'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Hero></Hero>
+      <Navbar></Navbar>
+      <Offers></Offers>
+      <Plan></Plan>
+      <ImageSlider></ImageSlider>
+    </div> 
   );
 }
 
 export default App;
+ 
